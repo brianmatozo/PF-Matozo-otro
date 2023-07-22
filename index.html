@@ -8,15 +8,25 @@
     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./assets/styles/style.css">
 </head>
-<body class="container-fluid bg-success-subtle">
-<div class="container d-grid">
-    <div class="d-grid align-items-center justify-content-center">
-        <a href="./index.html">
-        <img class="" style="height: 100px;" src="./assets/img/icon-tr.png" alt="Home">
+<body>
+<div class="container-fluid bg-success-subtle">
+    <div class="row">
+
+        <a class="d-grid img-fluid justify-content-center g-3" href="./index.html">
+        <img class="justify-content-end" style="height: 100px;" src="./assets/img/icon-tr.png" alt="Home">
         </a>
+
+        <button type="button" class="btn btn-secondary dropdown-toggle fw-bold" data-bs-toggle="Dropdown" data-bs-auto-close="true" aria-expanded="false">=</button>
+        <div class="d-flex justify-content-evenly gy-3 nav-link">
+            <a class="text-decoration-none text-reset" href="#">Home</a>
+            <a class="text-decoration-none text-reset" href="#">About</a>
+            <a class="text-decoration-none text-reset" href="#">Shop</a>
+            <a class="text-decoration-none text-reset" href="#">User</a>
+            <a class="text-decoration-none text-reset" href="#">Contact Us</a>
+        </div>
     </div>
 </div>
-
+</div>
 
 
 <!--
@@ -102,4 +112,6 @@
 </body>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
+<script>const dropdownElementList = document.querySelectorAll('.dropdown-toggle')
+    const dropdownList = [...dropdownElementList].map(dropdownToggleEl => new bootstrap.Dropdown(dropdownToggleEl))</script>
 </html>

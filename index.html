@@ -4,13 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HomePage</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./node_modules/bootstrap-icons/bootstrap-icons.svg">
+    <script src="/path/to/svg4everybody.js"></script>
+    <script>svg4everybody(); // run it now or whenever you are ready</script>
     <link rel="stylesheet" href="./assets/styles/style.css">
+    
 </head>
 <body>
 
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="house" viewBox="0 0 16 16">
+    <title>house</title>
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5ZM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5 5 5Z"/>
+  </symbol>
   <symbol id="bootstrap" viewBox="0 0 118 94">
     <title>Bootstrap</title>
     <path fill-rule="evenodd" clip-rule="evenodd" d="M24.509 0c-6.733 0-11.715 5.893-11.492 12.284.214 6.14-.064 14.092-2.066 20.577C8.943 39.365 5.547 43.485 0 44.014v5.972c5.547.529 8.943 4.649 10.951 11.153 2.002 6.485 2.28 14.437 2.066 20.577C12.794 88.106 17.776 94 24.51 94H93.5c6.733 0 11.714-5.893 11.491-12.284-.214-6.14.064-14.092 2.066-20.577 2.009-6.504 5.396-10.624 10.943-11.153v-5.972c-5.547-.529-8.934-4.649-10.943-11.153-2.002-6.484-2.28-14.437-2.066-20.577C105.214 5.894 100.233 0 93.5 0H24.508zM80 57.863C80 66.663 73.436 72 62.543 72H44a2 2 0 01-2-2V24a2 2 0 012-2h18.437c9.083 0 15.044 4.92 15.044 12.474 0 5.302-4.01 10.049-9.119 10.88v.277C75.317 46.394 80 51.21 80 57.863zM60.521 28.34H49.948v14.934h8.905c6.884 0 10.68-2.772 10.68-7.727 0-4.643-3.264-7.207-9.012-7.207zM49.948 49.2v16.458H60.91c7.167 0 10.964-2.876 10.964-8.281 0-5.406-3.903-8.178-11.425-8.178H49.948z"></path>
@@ -63,77 +74,85 @@
   </symbol>
 </svg>
 
+<!--all Body-->
+<!--first body-->
+<!--nav-->
 <div class="container-fluid bg-success-subtle">
-
-  <nav class="navbar navbar-expand-md navbar-dark fixed-top p-2">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#"><img style="height: 100px;" src="./assets/img/icon-tr.png" alt=""></a>
-      <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="navbar-collapse collapse" id="navbarCollapse">
-        <ul class="navbar-nav me-auto mb-2 mb-md-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Shop</a>
-          </li>
-          <li><a class="nav-link" href="#">About</a>
-          </li>
-          <li><a class="nav-link" href="#">User</a>
-          </li>
-          <li><a class="nav-link" href="#">Contact Us</a>
-          </li>
-        </ul>
-        <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
-      </div>
+<nav class="navbar navbar-expand-md navbar-dark fixed-top p-2">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#"><img style="height: 100px;" src="./assets/img/icon-tr.png" alt=""></a>
+    <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="navbar-collapse collapse" id="navbarCollapse">
+      <ul class="navbar-nav me-auto mb-2 mb-md-0 bg-secondary-subtle rounded-5 navItems">
+        <li class="nav-item">
+          <a class="nav-link active fw-bold " aria-current="page" href="#">Shop</a>
+        </li>
+        <li><a class="nav-link fw-bold text-black-50" href="#">About</a>
+        </li>
+        <li><a class="nav-link fw-bold text-black-50" href="#">User</a>
+        </li>
+        <li><a class="nav-link fw-bold text-black-50" href="#">Contact Us</a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
     </div>
-  </nav>
-
-<div class="b-example-divider"></div>
-
-<div class="container px-4 py-5">
+  </div>
+</nav>
+<!--Features cards-->
+<div class="container px-2 firstSection">
+  <div class="bodySection rounded-4 container-fluid my-5">
   <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
     <div class="col d-flex align-items-start">
-      <div class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
-        <svg class="bi" width="1em" height="1em"><use xlink:href="#toggles2"/></svg>
+      <div class="icon-square text-body-emphasis bg-body-secondary d-none d-sm-inline d-md-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+        <svg class="bi" width="1em" height="1em"><use xlink:href="#house"/></svg>
       </div>
 
       <div>
-        <h3 class="fs-2 text-body-emphasis">Featured title</h3>
-        <p>"Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words." </p>
+        <h3 class="fs-2 texcen text-body-emphasis">TITULO</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non mollitia suscipit maxime minus est delectus voluptatum. Accusamus nihil ut nisi possimus! Ipsa et commodi quidem laudantium in voluptatum dicta consectetur. </p>
       </div>
     </div>
 
     <div class="d-none col d-md-flex align-items-start">
       <div class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
-        <svg class="bi" width="1em" height="1em"><use xlink:href="#cpu-fill"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-life-preserver" viewBox="0 0 16 16">
+          <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm6.43-5.228a7.025 7.025 0 0 1-3.658 3.658l-1.115-2.788a4.015 4.015 0 0 0 1.985-1.985l2.788 1.115zM5.228 14.43a7.025 7.025 0 0 1-3.658-3.658l2.788-1.115a4.015 4.015 0 0 0 1.985 1.985L5.228 14.43zm9.202-9.202-2.788 1.115a4.015 4.015 0 0 0-1.985-1.985l1.115-2.788a7.025 7.025 0 0 1 3.658 3.658zm-8.087-.87a4.015 4.015 0 0 0-1.985 1.985L1.57 5.228A7.025 7.025 0 0 1 5.228 1.57l1.115 2.788zM8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+        </svg>
       </div>
 
       <div>
-        <h3 class="fs-2 text-body-emphasis">Featured title</h3>
-        <p>"Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words." </p>
+        <h3 class="fs-2 text-body-emphasis">TITULO</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, cumque maxime doloremque officiis esse omnis quia sit exercitationem atque amet ea, nesciunt consequuntur consectetur aliquid eius vel eligendi harum voluptatem.
+        </p>
       </div>
     </div>
 
     <div class="d-none col d-md-flex align-items-start">
       <div class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
-          <svg class="bi" width="1em" height="1em"><use xlink:href="#tools"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-life-preserver" viewBox="0 0 16 16">
+          <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm6.43-5.228a7.025 7.025 0 0 1-3.658 3.658l-1.115-2.788a4.015 4.015 0 0 0 1.985-1.985l2.788 1.115zM5.228 14.43a7.025 7.025 0 0 1-3.658-3.658l2.788-1.115a4.015 4.015 0 0 0 1.985 1.985L5.228 14.43zm9.202-9.202-2.788 1.115a4.015 4.015 0 0 0-1.985-1.985l1.115-2.788a7.025 7.025 0 0 1 3.658 3.658zm-8.087-.87a4.015 4.015 0 0 0-1.985 1.985L1.57 5.228A7.025 7.025 0 0 1 5.228 1.57l1.115 2.788zM8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+        </svg>
       </div>
 
       <div>
-        <h3 class="fs-2 text-body-emphasis">Featured title</h3>
-        <p>"Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words." </p>
+        <h3 class="fs-2 text-body-emphasis">TITULO</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque officia cum eius cupiditate eveniet nobis ab! Iste, laudantium magni illum, quasi corporis aperiam, maxime voluptatem sapiente officiis doloremque praesentium sequi.</p>
       </div>
     </div>
   </div>
+  </div>
 </div>
 
-<div class="b-example-divider"></div>
-
-<div class="container px-4 py-5" id="custom-cards">
-  <h2 class="pb-2 border-bottom">Hot Items</h2>
+<!--second body-->
+<!--3 items cards-->
+<div class="bodySection rounded-4 container-fluid my-5">
+<div class="container px-2 py-5" id="custom-cards">
+  <h2 class="pb-2 border-bottom text-center">Hot Items</h2>
 
   <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
     <div class="col">
@@ -145,14 +164,16 @@
               <img src="./assets/img/icon-tr.png" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
             </li>
             <li class="d-flex align-items-center me-3">
-              <i class="bi-alarm"></i>
-              <!--<img src="./node_modules/bootstrap-icons/icons/currency-dollar.svg" width="1em" height="1em" alt="">-->
-              <!--<svg class="bi me-2" width="1em" height="1em"><use href="#currency-dollar"></use></svg>-->
-              <small>Earth</small>
+              <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi me-2 bi-currency-dollar" viewBox="0 0 16 16">
+                <path d="M4 10.781c.148 1.667 1.513 2.85 3.591 3.003V15h1.043v-1.216c2.27-.179 3.678-1.438 3.678-3.3 0-1.59-.947-2.51-2.956-3.028l-.722-.187V3.467c1.122.11 1.879.714 2.07 1.616h1.47c-.166-1.6-1.54-2.748-3.54-2.875V1H7.591v1.233c-1.939.23-3.27 1.472-3.27 3.156 0 1.454.966 2.483 2.661 2.917l.61.162v4.031c-1.149-.17-1.94-.8-2.131-1.718H4zm3.391-3.836c-1.043-.263-1.6-.825-1.6-1.616 0-.944.704-1.641 1.8-1.828v3.495l-.2-.05zm1.591 1.872c1.287.323 1.852.859 1.852 1.769 0 1.097-.826 1.828-2.2 1.939V8.73l.348.086z"/>
+              </svg>
+              <small>XXX.XX</small>
             </li>
             <li class="d-flex align-items-center">
-              <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
-              <small>3d</small>
+              <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi me-2 bi-search" viewBox="0 0 16 16">
+                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+              </svg>
+              <small>Desc</small>
             </li>
           </ul>
         </div>
@@ -160,20 +181,24 @@
     </div>
 
     <div class="col">
-      <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('unsplash-photo-2.jpg');">
+      <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('./assets/img/producto1.png');">
         <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-          <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Much longer title that wraps to multiple lines</h3>
+          <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Item 2</h3>
           <ul class="d-flex list-unstyled mt-auto">
             <li class="me-auto">
               <img src="./assets/img/icon-tr.png" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
             </li>
             <li class="d-flex align-items-center me-3">
-              <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
-              <small>Pakistan</small>
+              <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi me-2 bi-currency-dollar" viewBox="0 0 16 16">
+                <path d="M4 10.781c.148 1.667 1.513 2.85 3.591 3.003V15h1.043v-1.216c2.27-.179 3.678-1.438 3.678-3.3 0-1.59-.947-2.51-2.956-3.028l-.722-.187V3.467c1.122.11 1.879.714 2.07 1.616h1.47c-.166-1.6-1.54-2.748-3.54-2.875V1H7.591v1.233c-1.939.23-3.27 1.472-3.27 3.156 0 1.454.966 2.483 2.661 2.917l.61.162v4.031c-1.149-.17-1.94-.8-2.131-1.718H4zm3.391-3.836c-1.043-.263-1.6-.825-1.6-1.616 0-.944.704-1.641 1.8-1.828v3.495l-.2-.05zm1.591 1.872c1.287.323 1.852.859 1.852 1.769 0 1.097-.826 1.828-2.2 1.939V8.73l.348.086z"/>
+              </svg>
+              <small>XXX.XX</small>
             </li>
             <li class="d-flex align-items-center">
-              <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
-              <small>4d</small>
+              <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi me-2 bi-search" viewBox="0 0 16 16">
+                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+              </svg>
+              <small>Desc</small>
             </li>
           </ul>
         </div>
@@ -181,20 +206,24 @@
     </div>
 
     <div class="col">
-      <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('unsplash-photo-3.jpg');">
+      <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('./assets/img/producto1.png');">
         <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
-          <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Another longer title belongs here</h3>
+          <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Item 3</h3>
           <ul class="d-flex list-unstyled mt-auto">
             <li class="me-auto">
               <img src="./assets/img/icon-tr.png" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
             </li>
             <li class="d-flex align-items-center me-3">
-              <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
-              <small>California</small>
+              <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi me-2 bi-currency-dollar" viewBox="0 0 16 16">
+                <path d="M4 10.781c.148 1.667 1.513 2.85 3.591 3.003V15h1.043v-1.216c2.27-.179 3.678-1.438 3.678-3.3 0-1.59-.947-2.51-2.956-3.028l-.722-.187V3.467c1.122.11 1.879.714 2.07 1.616h1.47c-.166-1.6-1.54-2.748-3.54-2.875V1H7.591v1.233c-1.939.23-3.27 1.472-3.27 3.156 0 1.454.966 2.483 2.661 2.917l.61.162v4.031c-1.149-.17-1.94-.8-2.131-1.718H4zm3.391-3.836c-1.043-.263-1.6-.825-1.6-1.616 0-.944.704-1.641 1.8-1.828v3.495l-.2-.05zm1.591 1.872c1.287.323 1.852.859 1.852 1.769 0 1.097-.826 1.828-2.2 1.939V8.73l.348.086z"/>
+              </svg>
+              <small>XXX.XX</small>
             </li>
             <li class="d-flex align-items-center">
-              <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
-              <small>5d</small>
+              <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi me-2 bi-search" viewBox="0 0 16 16">
+                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+              </svg>
+              <small>Desc</small>
             </li>
           </ul>
         </div>
@@ -202,9 +231,13 @@
     </div>
   </div>
 </div>
-
-
-
+<div class="table-group-divider"></div>
+<!--Boton lista-->
+<div class="d-grid gap-2 col-6 mx-auto">
+<button type="button" class="btn btn-lg botonMedio fw-bolder my-5 shadow-lg">Lista de Productos</button>
+</div>
+</div>
+<!--footer-->
 <footer class="footer mt-auto py-3 bg-body-tertiary">
   <div class="container">
     <span class="text-body-secondary">
@@ -223,7 +256,6 @@
     </span>
   </div>
 </footer>
-
 </div>
 <!--
     <header>

@@ -120,6 +120,11 @@ height: 3rem;
                 inset 0 .125em .5em rgba(0, 0, 0, .15);
 }
 
+.firstSectionUser{
+    padding-top: 8rem;
+    padding-bottom: 3rem;
+
+}
 /*
 body{
     background-color: #F1FAEE;

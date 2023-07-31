@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="./node_modules/bootstrap-icons/bootstrap-icons.svg">
     <script src="/path/to/svg4everybody.js"></script>
     <script>svg4everybody(); // run it now or whenever you are ready</script>
+    <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
     <link rel="stylesheet" href="../styles/style.css">
 </head>
 <body>
@@ -115,9 +116,8 @@
     </div>
 </nav>
 
-
+<div class="d-sm-flex d-md-none d-lg-flex">
 <div class="container px-4 firstSection" id="custom-cards">
-
 <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
 
     <div class="col">
@@ -182,117 +182,105 @@
     </div>
 </div>
 </div>
+</div>
 
 
+<!--Custom MD features-->
+<div class="d-none d-md-flex d-lg-none">
+<div class="container px-4 firstSection" id="custom-cards">
+<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 align-items-stretch g-4 py-5" >
 
+    <div class="col">
+    <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-3 shadow-lg mb-4">
+        <svg class="bd-placeholder-img card-img-top" width="100%" height="180" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text></svg>
+        <div class="card-body">
+            <h5 class="card-title ">Card title LG</h5>
+            <p class="card-text ">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="d-flex btn btn-danger justify-content-center">Comprar</a>
+        </div>
+    </div>
+    </div>
+    <div class="col">
+    <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-3 shadow-lg mb-4">
+        <svg class="bd-placeholder-img card-img-top" width="100%" height="180" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text></svg>
+        <div class="card-body">
+            <h5 class="card-title ">Card title</h5>
+            <p class="card-text ">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="d-flex btn btn-danger justify-content-center">Comprar</a>
+        </div>
+    </div>
+    </div>
+    <div class="col">
+    <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-3 shadow-lg mb-4">
+        <svg class="bd-placeholder-img card-img-top" width="100%" height="180" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text></svg>
+        <div class="card-body">
+            <h5 class="card-title ">Card title</h5>
+            <p class="card-text ">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="d-flex btn btn-danger justify-content-center">Comprar</a>
+        </div>
+    </div>
+    </div>
+    <div class="col">
+    <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-3 shadow-lg mb-4">
+        <svg class="bd-placeholder-img card-img-top" width="100%" height="180" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text></svg>
+        <div class="card-body">
+            <h5 class="card-title ">Card title</h5>
+            <p class="card-text ">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="d-flex btn btn-danger justify-content-center">Comprar</a>
+        </div>
+    </div>
+    </div>
+    <div class="col">
+    <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-3 shadow-lg mb-4">
+        <svg class="bd-placeholder-img card-img-top" width="100%" height="180" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text></svg>
+        <div class="card-body">
+            <h5 class="card-title ">Card title</h5>
+            <p class="card-text ">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="d-flex btn btn-danger justify-content-center">Comprar</a>
+        </div>
+    </div>
+    </div>
+    <div class="col">
+    <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-3 shadow-lg mb-4">
+        <svg class="bd-placeholder-img card-img-top" width="100%" height="180" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text></svg>
+        <div class="card-body">
+            <h5 class="card-title ">Card title</h5>
+            <p class="card-text ">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="d-flex btn btn-danger justify-content-center">Comprar</a>
+        </div>
+    </div>
+    </div>
+</div>
+</div>
+</div>
 
 
 
 <div class="container-fluid bodySection rounded-4 shadow-lg">
-    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 border-top">
-        <ul class="col-12 nav justify-content-center pb-3 mb-3">
-            <li class="nav-item"><a href="../../index.html" class="nav-link px-2 text-body-secondary">Home</a></li>
-            <li class="nav-item"><a href="./productos.html" class="nav-link px-2 text-body-secondary">Shop</a></li>
-            <li class="nav-item"><a href="./where.html" class="nav-link px-2 text-body-secondary">Where</a></li>
-            <li class="nav-item"><a href="./user.html" class="nav-link px-2 text-body-secondary">User</a></li>
-            <li class="nav-item"><a href="./contacto.html" class="nav-link px-2 text-body-secondary">Contact Us</a></li>
-            </ul>
-            <div class="col-md-4 d-flex align-items-center">
-            <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
-                <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
-            </a>
-            <span class="mb-3 mb-md-0 text-body-secondary">© 2023 Company, Inc</span>
-            </div>
-            <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-            <li class="ms-3"><a class="text-body-secondary" href="https://twitter.com/home"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
-            <li class="ms-3"><a class="text-body-secondary" href="https://www.instagram.com/"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
-            <li class="ms-3"><a class="text-body-secondary" href="https://www.facebook.com/"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
-            </ul>
-    </footer>
-  </div>
+<footer class="d-flex flex-wrap justify-content-between align-items-center py-3 border-top">
+    <ul class="col-12 nav justify-content-center pb-3 mb-3">
+        <li class="nav-item"><a href="../../index.html" class="nav-link px-2 text-body-secondary">Home</a></li>
+        <li class="nav-item"><a href="./productos.html" class="nav-link px-2 text-body-secondary">Shop</a></li>
+        <li class="nav-item"><a href="./where.html" class="nav-link px-2 text-body-secondary">Where</a></li>
+        <li class="nav-item"><a href="./user.html" class="nav-link px-2 text-body-secondary">User</a></li>
+        <li class="nav-item"><a href="./contacto.html" class="nav-link px-2 text-body-secondary">Contact Us</a></li>
+        </ul>
+        <div class="col-md-4 d-flex align-items-center">
+        <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+            <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+        </a>
+        <span class="mb-3 mb-md-0 text-body-secondary">© 2023 Company, Inc</span>
+        </div>
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+        <li class="ms-3"><a class="text-body-secondary" href="https://twitter.com/home"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
+        <li class="ms-3"><a class="text-body-secondary" href="https://www.instagram.com/"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
+        <li class="ms-3"><a class="text-body-secondary" href="https://www.facebook.com/"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
+        </ul>
+</footer>
+</div>
 
 </div>
-<!--
-    <header>
-    <img id="logo" src="../img/logo.png" alt="logo">
-    <a href="../pages/user.html"><img id="user" src="../img/user.png" alt="user"></a>
-        <ul>
-            <li><a href="../../index.html">Home</a></li>
-            <li><a href="../pages/productos.html">Productos</a></li>
-            <li><a href="../pages/contacto.html">Contacto</a></li>
-            <li><a href="../pages/donde.html">Donde</a></li>
-        </ul>
-    </header>
-<main>
-    <section class="cuerpopr">
-        <article>
-            <div>
-                <h3>Producto3</h3>
-                <img src="../img/producto3.png" alt="producto3">
-                <p>Detalles: Lorem ipsum dolor sit, amet consectetur adipisicing elit.blblblbllblb</p>
-                <p>Precio: $XXX.XXX</p>
-            </div>
-        </article>
-        <article>
-            <div>
-                <h3>Producto3</h3>
-                <img src="../img/producto3.png" alt="producto3">
-                <p>Detalles: Lorem ipsum dolor sit, amet consectetur adipisicing elit.blblblbllblb</p>
-                <p>Precio: $XXX.XXX</p>
-            </div>
-        </article>
-        <article>
-            <div>
-                <h3>Producto3</h3>
-                <img src="../img/producto3.png" alt="producto3">
-                <p>Detalles: Lorem ipsum dolor sit, amet consectetur adipisicing elit.blblblbllblb</p>
-                <p>Precio: $XXX.XXX</p>
-            </div>
-        </article>
-        <article>
-            <div>
-                <h3>Producto3</h3>
-                <img src="../img/producto3.png" alt="producto3">
-                <p>Detalles: Lorem ipsum dolor sit, amet consectetur adipisicing elit.blblblbllblb</p>
-                <p>Precio: $XXX.XXX</p>
-            </div>
-        </article>
-        <article>
-            <div>
-                <h3>Producto3</h3>
-                <img src="../img/producto3.png" alt="producto3">
-                <p>Detalles: Lorem ipsum dolor sit, amet consectetur adipisicing elit.blblblbllblb</p>
-                <p>Precio: $XXX.XXX</p>
-            </div>
-        </article>
-        <article>
-            <div>
-                <h3>Producto3</h3>
-                <img src="../img/producto3.png" alt="producto3">
-                <p>Detalles: Lorem ipsum dolor sit, amet consectetur adipisicing elit.blblblbllblb</p>
-                <p>Precio: $XXX.XXX</p>
-            </div>
-        </article>
-    </section>
-</main>
-    <footer>
-        <div class="footer">
-            <div class="footer-index"><a href="../../index.html"><img src="../img/logo.png" alt="Main"></a></div>
-            <div class="footer-info">
-              <h2>Contactanos</h2>
-              <p><strong>Direccion:</strong> calle lorem ipsum </p>
-              <p><strong>Numero:</strong> (123) 12 1234-1234</p>
-              <p><strong>Email:</strong> ejemplo@ejemplo.com</p>
-            </div>
-            <div class="footer-logos">
-              <ul>
-                <li><a href="https://www.facebook.com/"><img src="../img/facebook.png" alt="Facebook"></a></li>
-                <li><a href="https://www.instagram.com/"><img src="../img/instagram.png" alt="Instagram"></a></li>
-                <li><a href="https://twitter.com/home"><img src="../img/twitter.png" alt="Twitter"></a></li>
-              </ul>
-            </div>
-          </div>
-    </footer>
--->
+
+
 </body>
 </html>

@@ -13,13 +13,15 @@
 }
 }
 
+$bgdivider:rgba(0, 0, 0, .1);
+
 .b-example-divider {
     width: 100%;
     height: 3rem;
-    background-color: rgba(0, 0, 0, .1);
-    border: solid rgba(0, 0, 0, .15);
+    background-color: $bgdivider;
+    border: solid $bgdivider;
     border-width: 1px 0;
-    box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+    box-shadow: inset 0 .5em 1.5em $bgdivider, inset 0 .125em .5em rgba(0, 0, 0, .15);
 }
 
 .b-example-vr {
@@ -54,7 +56,6 @@
 .btn-bd-primary {
     --bd-violet-bg: #712cf9;
     --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
-
     --bs-btn-font-weight: 600;
     --bs-btn-color: var(--bs-white);
     --bs-btn-bg: var(--bd-violet-bg);
@@ -83,9 +84,17 @@
     border-radius: .75rem;
 }
 
-.text-shadow-1 { text-shadow: 0 .125rem .25rem rgba(0, 0, 0, .25); }
-.text-shadow-2 { text-shadow: 0 .25rem .5rem rgba(0, 0, 0, .25); }
-.text-shadow-3 { text-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .25); }
+$textshadow: 0 .125rem .25rem rgba(0, 0, 0, .25);
+
+.text-shadow-1{
+    text-shadow: $textshadow;
+    .text-shadow-2{
+        text-shadow: $textshadow;
+        .text-shadow-3{
+            text-shadow: $textshadow;
+        }
+    }
+}
 
 .card-cover {
     background-repeat: no-repeat;
@@ -101,14 +110,8 @@
 .botonMedio{
     background-color: rgb(224, 66, 8);
     font-family: 'Montserrat', sans-serif;
-    
 }
 
-.firstSection{
-    padding-top: 6rem;
-    padding-bottom: 3rem;
-
-}
 
 .navItems{
     padding: 0.5rem !important;
@@ -120,8 +123,26 @@
                 inset 0 .125em .5em rgba(0, 0, 0, .15);
 }
 
-.firstSectionUser{
-    padding-top: 8rem;
-    padding-bottom: 3rem;
+.gradientBg{ 
+    background: linear-gradient(315deg, rgba(236,151,60,1) 38%, rgba(0,255,141,1) 100%);
+}
 
+$mobile: 576px;
+$tablet: 768px;
+$desktop: 992px;
+
+@mixin responsive-spacing($property, $mobile-value, $tablet-value, $desktop-value) {
+  #{$property}: $mobile-value;
+  
+  @media (min-width: $tablet) {
+    #{$property}: $tablet-value;
+  }
+  
+  @media (min-width: $desktop) {
+    #{$property}: $desktop-value;
+  }
+}
+
+.spacing {
+    @include responsive-spacing(height, 9rem, 10rem, 12rem);
 }

@@ -15,7 +15,7 @@
   width: 100%;
   height: 3rem;
   background-color: rgba(0, 0, 0, 0.1);
-  border: solid rgba(0, 0, 0, 0.15);
+  border: solid rgba(0, 0, 0, 0.1);
   border-width: 1px 0;
   box-shadow: inset 0 0.5em 1.5em rgba(0, 0, 0, 0.1), inset 0 0.125em 0.5em rgba(0, 0, 0, 0.15);
 }
@@ -84,13 +84,11 @@
 .text-shadow-1 {
   text-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.25);
 }
-
-.text-shadow-2 {
-  text-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.25);
+.text-shadow-1 .text-shadow-2 {
+  text-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.25);
 }
-
-.text-shadow-3 {
-  text-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.25);
+.text-shadow-1 .text-shadow-2 .text-shadow-3 {
+  text-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.25);
 }
 
 .card-cover {
@@ -109,11 +107,6 @@
   font-family: "Montserrat", sans-serif;
 }
 
-.firstSection {
-  padding-top: 6rem;
-  padding-bottom: 3rem;
-}
-
 .navItems {
   padding: 0.5rem !important;
 }
@@ -123,7 +116,22 @@
   box-shadow: inset 0 0.5em 1.5em rgba(0, 0, 0, 0.1), inset 0 0.125em 0.5em rgba(0, 0, 0, 0.15);
 }
 
-.firstSectionUser {
-  padding-top: 8rem;
-  padding-bottom: 3rem;
-}/*# sourceMappingURL=style.css.map */
+.gradientBg {
+  background: linear-gradient(315deg, rgb(236, 151, 60) 38%, rgb(0, 255, 141) 100%);
+}
+
+.spacing {
+  height: 9rem;
+}
+@media (min-width: 768px) {
+  .spacing {
+    height: 10rem;
+  }
+}
+@media (min-width: 992px) {
+  .spacing {
+    height: 12rem;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

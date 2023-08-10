@@ -1,0 +1,14 @@
+User-agent: *
+Disallow: maquetamoqups
+
+User-agent: *
+Disallow: node_modules
+
+User-agent: *
+Disallow: package-lock.json
+
+User-agent: *
+Disallow: package.json
+
+User-agent: *
+Disallow: README.md

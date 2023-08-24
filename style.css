@@ -134,4 +134,16 @@
   }
 }
 
-/*# sourceMappingURL=style.css.map */
+.hover-nav-link {
+  transition: background-color 0.3s ease;
+}
+.hover-nav-link:hover {
+  background-color: gray;
+}
+
+.hover-f-link {
+  transition: background-color 0.3s ease;
+}
+.hover-f-link:hover {
+  background-color: gray;
+}/*# sourceMappingURL=style.css.map */

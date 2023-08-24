@@ -146,3 +146,17 @@ $desktop: 992px;
 .spacing {
     @include responsive-spacing(height, 9rem, 10rem, 12rem);
 }
+
+.hover-nav-link {
+    transition: background-color 0.3s ease;
+    &:hover {
+      background-color: gray;
+    }
+  }
+
+.hover-f-link {
+    transition: background-color 0.3s ease;
+    &:hover {
+      background-color: gray;
+    }
+  }
